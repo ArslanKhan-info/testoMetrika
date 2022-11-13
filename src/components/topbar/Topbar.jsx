@@ -8,8 +8,8 @@ const Topbar = ({showSidebar,setShowSidebar}) => {
   
 
   return (
-    <nav>
-      <div className={style.topbar}>
+    <>
+      <nav className={style.topbar}>
         <div className={style.menu_logo}>
           <div className={style.menu_icon_wrp}>
             <div className={!showSidebar ? style.menu_icon : `${style.show} ${style.menu_icon}`} onClick={()=>setShowSidebar(!showSidebar)}>
@@ -30,8 +30,8 @@ const Topbar = ({showSidebar,setShowSidebar}) => {
             <img src={profilePic} alt="" />
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   )
 }
 
