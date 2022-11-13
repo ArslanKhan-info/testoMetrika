@@ -1,11 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import logger from "redux-logger";
-import {AnswerCount} from '../reducer'
+import thunk from "redux-thunk";
+import {AnswerCount,Timing} from '../reducer'
 
 
 
 
 export const store = configureStore({
-    reducer:{AnswerCount},
-    middleware:[logger]
+    reducer:{AnswerCount,Timing},
+    middleware:[logger,thunk]
 })

@@ -3,6 +3,7 @@ import style from './Topbar.module.scss'
 import logo from '../../asset/img/logo.svg'
 import Search from '../../asset/img/search.svg'
 import profilePic from '../../asset/img/profilePic.svg'
+import { Link } from 'react-router-dom'
 
 const Topbar = ({showSidebar,setShowSidebar}) => {
   
@@ -19,7 +20,7 @@ const Topbar = ({showSidebar,setShowSidebar}) => {
               <span className={style.bar3}></span>
             </div>
           </div>
-          <img src={logo} alt="" className={style.logo}/>
+          <Link to='/'><img src={logo} alt="" className={style.logo}/></Link>
         </div>
         <div className={style.search_profile}>
           <div className={style.search}>

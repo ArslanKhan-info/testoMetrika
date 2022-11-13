@@ -13,3 +13,14 @@ export const AnswerCount =(state=initialState,action)=>{
     }
 }
 
+const initiltime = {time:0}
+export const Timing =(state=initiltime,action)=>{
+    switch (action.type) {
+        case 'SAVE_TIME':
+            return ({time: action.time})
+        case 'RESET_TIME':
+            return({time:0})
+        default:
+            return ({...state})
+    }
+}
