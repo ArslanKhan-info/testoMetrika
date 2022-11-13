@@ -1,0 +1,15 @@
+@import '../../scss/ver';
+@import '../../scss/typo';
+
+.CollapsMenu{
+    padding: 0 30px;
+    .CollapsMenu_item{
+        display: block;
+        padding: 5px 0;
+        font-family: BS,Roboto,sans-serif;
+        color: $darkGrey;
+        &:hover{
+            color: $white;
+        }
+    }
+}

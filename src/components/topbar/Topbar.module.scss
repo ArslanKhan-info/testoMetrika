@@ -1,0 +1,115 @@
+@import "../../scss/ver";
+
+.topbar {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  .menu_logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    .menu_icon_wrp {
+      border-right: 1px solid $middleGrayColor;
+    }
+    .menu_icon {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 26px;
+      transform: rotate(0deg);
+      margin: 25px 23px;
+      z-index: 999;
+      .bar1 {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $blue;
+        top: 0;
+        border-radius: 25px;
+        transition: all 0.25s ease-in-out;
+      }
+      .bar2_1,
+      .bar2 {
+        @extend .bar1;
+        top: 11px;
+      }
+      .bar3 {
+        @extend .bar1;
+        top: 22px;
+      }
+    }
+    .show {
+      .bar2 {
+        transform: rotate(45deg);
+        background-color: $darkGrey;
+      }
+      .bar2_1 {
+        transform: rotate(-45deg);
+        background-color: $darkGrey;
+      }
+      .bar1,
+      .bar3 {
+        top: 11px;
+        background-color: transparent;
+      }
+    }
+    .logo {
+      width: 150px;
+      height: 100%;
+      margin: 23px;
+    }
+  }
+
+  .search_profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .search {
+      position: relative;
+      margin-right: 20px;
+      input {
+        width: 300px;
+        height: 60px;
+        margin: 12px 0;
+        outline: none;
+        border: none;
+        background-color: $lightGrayColor;
+        padding: 20px;
+        padding-right: 60px;
+        color: $textcolor;
+        border-radius: 5px;
+        font-size: 16px;
+        &::placeholder {
+          color: $darkGrey;
+        }
+      }
+      img {
+        position: absolute;
+        width: 25px;
+        height: 100%;
+        top: 0;
+        z-index: 9;
+        right: 20px;
+      }
+    }
+    .profile_pic {
+      position: relative;
+      height: 100%;
+      width: 50px;
+      margin-right: 20px;
+      img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 3px solid $middleGrayColor;
+        border-radius: 50%;
+        object-fit: cover;
+        @include center;
+      }
+    }
+  }
+}

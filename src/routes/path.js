@@ -1,13 +1,20 @@
-import React from 'react'
-import { Route,Routes } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import {Home} from '../pages'
+import Topbar from '../components/topbar/Topbar'
+import Sidebar from '../components/sidebar/Sidebar'
+import { Home } from '../pages'
 
 const Path = () => {
+  const [showSidebar,setShowSidebar] = useState(false)
   return (
-    <Routes>
-        <Route path='/'  element={<Home/>}/>
-    </Routes>
+    <>
+      <Topbar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>
+      <Sidebar showSidebar={showSidebar}/>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </>
   )
 }
 

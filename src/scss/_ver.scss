@@ -1,0 +1,21 @@
+$white:#fff;
+$lightGrayColor: #F1F4F7;
+$middleGrayColor: #D9E1E6;
+$blue: #009DE9;
+$additionalFirmColor: #FA7079;
+$textcolor:#5e5e73;
+$semiBold: 500;
+$darkGrey:#a2a0b8;
+$sidebarclr:#3e3d56;
+$testpagBg:#6b6fbc;
+
+@mixin center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin center_flx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  font-size: 18px;
+}
+body,
+html {
+  position: relative;
+}
+textarea {
+  resize: none;
+}
+li,
+ul,
+ol {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+a:hover {
+  color: $white;
+}
+li,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
