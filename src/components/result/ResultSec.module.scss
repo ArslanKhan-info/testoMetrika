@@ -23,6 +23,68 @@
         .timing,.description,.note{
             margin-bottom: 16px;
         }
+        .result_link{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .link{
+            color: #02A0EA;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease-out;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: initial;
+            height: 22px;
+            word-wrap: normal;
+            &:hover{
+                border-bottom: 1px solid #02A0EA;
+            }
+        }
+        .btn{
+            background-color: $lightGrayColor;
+            outline: none;
+            border: none;
+            padding: 8px 15px;
+            color: $darkGrey;
+            border-radius: 3px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .social{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+        .Whatsapp{
+            background-color: #65bc54;
+            height: 26px;
+            border-radius: 50%;
+            margin-left:10px;
+            cursor:pointer;
+            margin-top: -10px
+        }
+        .Twitter{
+           @extend .Whatsapp;
+            background-color: #00aced;
+           
+        }
+        .Printerest{
+           @extend .Whatsapp;
+            background-color: #c20724;
+           
+        }
+        .Telegram{
+            @extend .Whatsapp;
+            background-color: #64a9dc;
+            
+        }
+        .link_img{
+            width: 26px;
+            height: 26px;
+        }
     }
 
     .left{
@@ -33,5 +95,17 @@
 @media (max-width:768px){
     .container{
         width: 100%;
+        .wrp{
+            flex-direction: column-reverse;
+            .right{
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .left{
+                width: 100%;
+                margin: 0 10px;
+            }
+        }
     }
 }

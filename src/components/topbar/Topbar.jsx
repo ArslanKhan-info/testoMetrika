@@ -10,9 +10,7 @@ const Topbar = ({showSidebar,setShowSidebar}) => {
 
   return (
     <>
-      <nav className={style.topbar}>
-        <div className={style.menu_logo}>
-          <div className={style.menu_icon_wrp}>
+     <div className={style.menu_icon_wrp}>
             <div className={!showSidebar ? style.menu_icon : `${style.show} ${style.menu_icon}`} onClick={()=>setShowSidebar(!showSidebar)}>
               <span className={style.bar1}></span>
               <span className={style.bar2}></span>
@@ -20,7 +18,10 @@ const Topbar = ({showSidebar,setShowSidebar}) => {
               <span className={style.bar3}></span>
             </div>
           </div>
-          <Link to='/'><img src={logo} alt="" className={style.logo}/></Link>
+      <nav className={style.topbar}>
+        <div className={style.menu_logo}>
+         
+          <Link to='/' className={style.cont}><img src={logo} alt="" className={style.logo}/></Link>
         </div>
         <div className={style.search_profile}>
           <div className={style.search}>

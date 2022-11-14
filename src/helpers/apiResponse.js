@@ -46,6 +46,13 @@ import op6_4 from '../asset/img/question/qs6/option4.svg'
 import op6_5 from '../asset/img/question/qs6/option5.svg'
 import op6_6 from '../asset/img/question/qs6/option6.svg'
 
+
+import Whatsapp from '../asset/img/social/whatsapp.svg'
+import telegram from '../asset/img/social/telegram.svg'
+import printset from '../asset/img/social/printerest.svg'
+import twitter from '../asset/img/social/twitter.svg'
+
+
 export const navlist_inner = [
   "Personality and character",
   "Temperament",
@@ -105,3 +112,20 @@ export const questions = [
     options:[{op:op6_1,answer:0},{op:op6_2,answer:0},{op:op6_3,answer:0},{op:op6_4,answer:0},{op:op6_5,answer:1},{op:op6_6,answer:0}]
   },
 ];
+
+
+
+export const social =[
+  {
+    img:Whatsapp,name:'Whatsapp'
+  },
+  {
+    img:telegram,name:'Telegram'
+  },
+  {
+    img:printset,name:'Printerest'
+  },
+  {
+    img:twitter,name:'Twitter'
+  }
+]

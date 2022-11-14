@@ -53,7 +53,6 @@
     .option {
       padding: 0 10px;
       display: inline-block;
-      
     }
     .option_img {
       width: 120px;
@@ -79,19 +78,24 @@
     background-color: $white;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .wrp {
     .question_sec {
-      width: 750px;
+      width: 90%;
       .question_img {
-        .question {
-        }
+        width: 480px;
+      }
+      .question {
+        font-size: 1.5rem;
       }
     }
     .options {
+      max-width: 90%;
       .option {
       }
       .option_img {
+        width: 80px;
+      height: 80px;
       }
     }
   }
